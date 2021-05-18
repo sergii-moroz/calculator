@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/sergii-moroz/calculator)
-- Calculator-app-online: [link](https://tinyurl.com/kczbb456)
+- Calculator-app-online: [link](https://tinyurl.com/rfna9z9k)
 
 ## My process
 
