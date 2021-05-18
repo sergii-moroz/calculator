@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-fill-base: hsl(222, 26%, 31%);
+        --color-fill-keypad: hsl(223, 31%, 20%);
+        --color-fill-screen: hsl(224, 36%, 15%);
+
+        --color-fill-key-accent-1: hsl(225, 21%, 49%);
+        --color-shadow-key-accent-1: hsl(224, 28%, 35%);
+
+        --color-fill-key-accent-2: hsl(6, 63%, 50%);
+        --color-shadow-key-accent-2: hsl(6, 70%, 34%);
+
+        --color-fill-key-base: hsl(30, 25%, 89%);
+        --color-shadow-key-base: hsl(28, 16%, 65%);
+
+        --color-text-key-base: hsl(221, 14%, 31%);
+        --color-text-key-accent-1: hsl(0, 0%, 100%);
+        --color-text-key-accent-2: hsl(0, 0%, 100%);
+        --color-text-screen: hsl(0, 0%, 100%);
+    }
+
+    .theme-2 {
+        --color-fill-base: hsl(0, 0%, 90%);
+        --color-fill-keypad: hsl(0, 5%, 81%);
+        --color-fill-screen: hsl(0, 0%, 93%);
+
+        --color-fill-key-accent-1: hsl(185, 42%, 37%);
+        --color-shadow-key-accent-1: hsl(185, 58%, 25%);
+
+        --color-fill-key-accent-2: hsl(25, 98%, 40%);
+        --color-shadow-key-accent-2: hsl(25, 99%, 27%);
+
+        --color-fill-key-base: hsl(45, 7%, 89%);
+        --color-shadow-key-base: hsl(35, 11%, 61%);
+
+        --color-text-key-base: hsl(60, 10%, 19%);
+        --color-text-key-accent-1: hsl(0, 0%, 100%);
+        --color-text-key-accent-2: hsl(0, 0%, 100%);
+        --color-text-screen: hsl(60, 10%, 19%);
+    }
+
+    .theme-3 {
+        --color-fill-base: hsl(268, 75%, 9%);
+        --color-fill-keypad: hsl(268, 71%, 12%);
+        --color-fill-screen: hsl(268, 71%, 12%);
+
+        --color-fill-key-accent-1: hsl(281, 89%, 26%);
+        --color-shadow-key-accent-1: hsl(285, 91%, 52%);
+
+        --color-fill-key-accent-2: hsl(176, 100%, 44%);
+        --color-shadow-key-accent-2: hsl(177, 92%, 70%);
+
+        --color-fill-key-base: hsl(268, 47%, 21%);
+        --color-shadow-key-base: hsl(290, 70%, 36%);
+
+        --color-text-key-base: hsl(52, 100%, 62%);
+        --color-text-key-accent-1: hsl(0, 0%, 100%);
+        --color-text-key-accent-2: hsl(198, 20%, 13%);
+        --color-text-screen: hsl(52, 100%, 62%);
+    }
+}
+
+@layer components {
+    .btn {
+        @apply w-14 h-14 rounded flex justify-center items-center  cursor-pointer pt-2
+    }
+
+    .btn-wide {
+        @apply h-14 rounded flex justify-center items-center  cursor-pointer pt-2 col-span-2
+    }
+
+    .btn-base {
+        @apply bg-skin-key-base text-3xl text-skin-key-base shadow-key-base
+    }
+
+    .btn-accent-1 {
+        @apply bg-skin-key-accent-1 text-lg text-skin-key-accent-1 shadow-key-accent-1 uppercase
+    }
+
+    .btn-accent-2 {
+        @apply bg-skin-key-accent-2 text-lg text-skin-key-accent-2 shadow-key-accent-2 uppercase
+    }
+    
+}

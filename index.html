@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <title>Calculator - Frontend Mentor - Challenge</title>
+</head>
+<body class="bg-skin-base font-Spartan transition-all">
+    <!--    CALCULATOR      -->
+    <div class="m-6 max-w-max mx-auto"> 
+
+        <!--    TITEL  -->
+        <div class="text-skin-screen flex justify-between items-center pb-3">
+            <h1 class="text-2xl">calc</h1>
+            <div class="flex justify-between items-end gap-3 text-xs font-thin tracking-wider">
+                <div class="uppercase">theme</div>
+                <div id="theme-toggle" class="cursor-pointer">
+                    <div class="flex justify-around text-xs">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                    <div id="ball-toggle" class="bg-skin-keypad rounded-full p-1 w-14 flex">
+                        <div class="rounded-full w-3 h-3 bg-skin-key-accent-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--    SCREEN  -->
+        <div class="bg-skin-screen rounded-xl text-3xl text-skin-screen p-4 pb-3 text-right" id="screen">399.981</div>
+        
+        <!--    KEYPAD  -->
+        <div class="bg-skin-keypad rounded-xl grid grid-cols-4 gap-4 p-6 mt-4">
+            <div class="btn btn-base number">7</div>
+            <div class="btn btn-base number">8</div>
+            <div class="btn btn-base number">9</div>
+            <div class="btn btn-accent-1" id="delete-button">del</div>
+            <!--    ROW     -->
+            <div class="btn btn-base number">4</div>
+            <div class="btn btn-base number">5</div>
+            <div class="btn btn-base number">6</div>
+            <div class="btn btn-base operator">+</div>
+            <!--    ROW     -->
+            <div class="btn btn-base number">1</div>
+            <div class="btn btn-base number">2</div>
+            <div class="btn btn-base number">3</div>
+            <div class="btn btn-base operator">-</div>
+            <!--    ROW     -->
+            <div class="btn btn-base number">.</div>
+            <div class="btn btn-base number">0</div>
+            <div class="btn btn-base operator">/</div>
+            <div class="btn btn-base operator">x</div>
+            <!--    ROW     -->
+            <div class="btn-wide btn-accent-1" id="reset-button">reset</div>
+            <div class="btn-wide btn-accent-2" id="equal-button">=</div>
+        </div>
+        <!--    KEYPAD END  -->
+
+    </div>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/calculator.js"></script>
+</body>
+</html>
